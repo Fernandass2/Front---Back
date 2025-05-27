@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria Brasil</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="carregar_novidades()">
+    
+
+<header>
+    <div id="header-black">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">São Paulo, BR</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="menu">
+        <nav>
+            <ul>
+                <li><a href="#" class="titulo-menu">Categorias</a></li>
+                <li><a href="esporte.html">esporte</a></li>
+                <li><a href="ficcao.html">ficcao</a></li>
+                <li><a href="romance.htm">romance</a></li>
+                <li><a href="fantasia.html">fantasia</a></li>
+                <li><a href="manga.html">anime</a></li>
+                <li><a href="carrinho.html" class="carrinho"> <img src="img/carrinho1.png" alt="carrinho"></a></li>
+                <li><a href="usuario.html" class="usuario">usuário</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="painel">
+        <form onsubmit="return false" id="pesquisa">
+            <input type="text" placeholder="Pesquise pelo título" id="pesquisa-titulo">
+            <button>
+                <img src="img/lupa.png" alt="Clique para pesquisar">
+            </button>
+        </form>
+    </div>
+</header>
+
+
+<main>
+    <section id="novidades">
+        <h2>Novidades</h2>
+        <p class="txtnovidades">Confira nossos últimos lançamentos. Listas com os 15 últimos livros</p>
+        <div id="livrosnovidades">
+            
+        </div>
+
+       
+
+    </section>
+    <div class = "seta-esquerda" onclick="rolarNovidadesDireita()"><img src="img/seta-esquerda.png"></div>
+    <div class = "seta-direita" onclick="rolarNovidadesEsquerda()"><img src="img/seta-direita.png"></div>
+</main>
+<footer></footer>
+
+
+
+ 
+<script src="js/script.js"></script>
+</body>
+</html>
